@@ -1,0 +1,12 @@
+/* Import Page Styling */
+.import-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.import-card .card-header {
+    background-color: #198754;
+    color: white;
+    font-weight: 600;
+}

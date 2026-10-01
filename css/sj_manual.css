@@ -1,0 +1,122 @@
+/* --- CSS KUSTOM UNTUK SJ MANUAL (Selaras dengan index.php) --- */
+body { 
+    background-color: #f4f6f9; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* Card Styling selaras dengan navbar/box di index.php */
+.card { 
+    border-radius: 8px; 
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+    background-color: #ffffff;
+}
+
+/* Nav Tabs Styling selaras dengan tema utama */
+.nav-tabs {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.nav-tabs .nav-link {
+    font-weight: 500;
+    color: #64748b; /* Abu-abu slate yang lebih bersih */
+    border: 1px solid transparent;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #1e293b;
+    border-color: #e2e8f0 #e2e8f0 #e2e8f0;
+    background-color: #f8fafc;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: 600;
+    color: #2563eb; /* Biru utama yang konsisten dengan sidebar */
+    background-color: #ffffff;
+    border-color: #e2e8f0 #e2e8f0 #ffffff;
+}
+
+/* Tabel Styling agar konsisten */
+.table {
+    color: #334155;
+}
+
+.table th {
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: #f8fafc !important;
+    color: #475569;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.table td {
+    font-size: 0.9rem;
+    vertical-align: middle;
+    border-color: #e2e8f0;
+}
+
+/* Penyesuaian tombol dan elemen form di dalam SJ Manual */
+.form-control, .form-select {
+    border-color: #cbd5e1;
+    color: #334155;
+    border-radius: 6px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 0.2rem rgba(37, 99, 235, 0.12);
+}
+
+/* --- TAMBAHAN GAYA BARU AGAR LEBIH MENARIK & PROPORSIONAL --- */
+
+/* Label form yang lebih elegan */
+.form-label {
+    color: #475569;
+    font-size: 0.82rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Efek card header / judul section di dalam form */
+.card-body h6 {
+    letter-spacing: -0.01em;
+    color: #1e293b !important;
+}
+
+/* Tombol aksi utama dengan efek lembut */
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    border-radius: 6px;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(37, 99, 235, 0.15);
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.25);
+}
+
+/* Styling area tabel agar scrollbar lebih minimalis dan cantik */
+.table-scroll-container::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.table-scroll-container::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

@@ -1,0 +1,16 @@
+.table-custom th, 
+.table-custom td {
+    font-size: 12px;
+    padding: 4px 8px;
+    white-space: nowrap;
+}
+
+.card-header-custom {
+    background-color: #212529;
+    color: white;
+}
+
+.table-custom .badge {
+    font-size: 11px;
+    padding: 2px 5px;
+}

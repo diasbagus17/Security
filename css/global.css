@@ -1,0 +1,72 @@
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sidebar {
+    width: 75px; /* Lebar awal saat diciutkan */
+    min-height: 100vh;
+    background: #212529;
+    color: #fff;
+    transition: width 0.3s ease; /* Animasi halus */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+/* Saat kursor diarahkan ke sidebar, ukurannya melebar */
+#sidebar:hover {
+    width: 260px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px 10px;
+    background: #111;
+    text-align: center;
+    width: 260px;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 10px 15px;
+    font-size: 1.05em;
+    display: flex;
+    align-items: center;
+    color: #adb5bd;
+    text-decoration: none;
+    transition: 0.2s;
+    width: 260px;
+    box-sizing: border-box;
+}
+
+/* Mengatur agar menu utama (seperti Delivery Order) merenggangkan teks dan ikon panah dengan pas */
+#sidebar ul li > a.dropdown-toggle,
+#sidebar .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidebar ul li a:hover, 
+#sidebar ul li.active > a {
+    color: #fff;
+    background: #0d6efd;
+    text-decoration: none;
+}
+
+/* Memastikan kontainer sub-menu mengikuti lebar sidebar saat terbuka */
+#sidebar .collapse,
+#sidebar .collapse ul {
+    width: 260px;
+}
+
+#sidebar .collapse ul li a {
+    padding-left: 35px; /* Menjorok ke dalam untuk sub-menu */
+}

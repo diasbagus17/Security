@@ -1,0 +1,11 @@
+.form-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-card .card-header {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 600;
+}
