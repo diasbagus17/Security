@@ -2,7 +2,14 @@
 require_once __DIR__ . '/../config/guard.php';
 require_login([2, 5, 99]); // Bagian Logistik, Accounting   & Administrator
 
-$tanggal = isset($_GET['tanggal']) ? $_GET['tanggal'] : date('Y-m-d');
+// Ambil tanggal dari parameter GET (mendukung 'tanggal', 'tanggal_mulai', atau default hari ini)
+$tanggal = date('Y-m-d');
+if (isset($_GET['tanggal']) && !empty($_GET['tanggal'])) {
+    $tanggal = $_GET['tanggal'];
+} elseif (isset($_GET['tanggal_mulai']) && !empty($_GET['tanggal_mulai'])) {
+    $tanggal = $_GET['tanggal_mulai'];
+}
+
 $aksi_cek = isset($_GET['aksi_cek']) ? true : false;
 
 $map_dokumen = [];
