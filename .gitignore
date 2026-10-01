@@ -1,0 +1,9 @@
+# Konfigurasi Koneksi Database & Sensitif
+config/koneksi.php
+.env
+
+# File Server
+.htaccess
+
+# Folder Vendor (jika ada)
+vendor/
